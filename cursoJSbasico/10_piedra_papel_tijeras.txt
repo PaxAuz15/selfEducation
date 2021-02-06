@@ -1,0 +1,5 @@
+Piedra papel o tijeras
+
+variables (piedra, papel, tijeras)
+
+una funcion para pasar el parametro con lo que voy a jugar (piedra, papel o tijera)
