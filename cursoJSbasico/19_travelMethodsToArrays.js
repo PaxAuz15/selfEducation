@@ -35,3 +35,32 @@ nombreAuto
 
 // Mapea todo el contenido y solo trae lo que se pide en la funcion
 // En este caso, no generó objetos dentro del array
+
+var findAuto = autos.find(function(auto){
+    return auto.marca === "Tesla"
+})
+
+// Busca el contenido y crea un, en este caso, un objeto
+
+autos.forEach(function(auto){
+    var autoFilter = {auto}
+    console.log(autoFilter)
+})
+
+// Me crea objetos por separados! 
+// Ya no es un array que los contiene
+
+autos.forEach(function(auto){
+    console.log(auto.marca)
+})
+
+// Muestra solo los nombres. Sin ser objetos
+
+var autosViejos = autos.some(function(auto){
+    return auto.anio < 2021;
+})
+
+autosViejos
+
+// Realiza la busqueda de lo que establece la funcion
+// Si se cumple, regresa un true. Caso contrario, un false
