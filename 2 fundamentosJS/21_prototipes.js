@@ -16,6 +16,15 @@ Persona.prototype.avisarSiEsAltoBajo = function(){
     }
 }
 
+Persona.prototype.saludar = function(){
+    console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido}`)
+}
+
+// Persona.prototype.saludar = () =>{
+//     console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido}`)
+// }
+//FIXME: this significa aqui window y no hace referencia al constructor Persona
 
 var luis = new Persona('Luis','Auz', 23, 1.75)
-// console.log(luis)
+
+//FIXME: No usar this, de manera simple, en arrow functions
