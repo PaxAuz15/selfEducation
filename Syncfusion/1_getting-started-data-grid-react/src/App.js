@@ -1,10 +1,12 @@
+import React from 'react';
 import './App.css';
 import {GridComponent} from '@syncfusion/ej2-react-grids';
+import data from './dataSource.json'
 
 function App() {
   return (
     <div>
-      <GridComponent/>
+      <GridComponent dataSource={data}/>
     </div>
     /*<div className="App">
       <header className="App-header">
