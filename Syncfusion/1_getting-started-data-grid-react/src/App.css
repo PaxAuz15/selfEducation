@@ -1,5 +1,12 @@
 @import url('https://cdn.syncfusion.com/ej2/material.css');
 
+.TableOnData {
+  padding: 5%;
+}
+/* 
+.table{
+  border-radius: 5%;
+} */
 /* .App {
   text-align: center;
 }
