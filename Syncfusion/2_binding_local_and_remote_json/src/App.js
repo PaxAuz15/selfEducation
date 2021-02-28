@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {GridComponent, ColumnDirective, ColumnsDirective, Inject, Page, Filter, Group} from '@syncfusion/ej2-react-grids';
 import { DataManager, ODataV4Adaptor } from "@syncfusion/ej2-data";
 import './App.css';
@@ -9,6 +9,9 @@ const App = () => {
     url:'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
     adaptor: new ODataV4Adaptor()
   })
+  const [rowData, setRowData] = useState({});
+  const jsonData = rowData.data;
+  console.log(jsonData);
   return (
     <div>
       <GridComponent
@@ -17,7 +20,8 @@ const App = () => {
         allowPaging={true}
         pageSettings={{ pageSize:6}}
         allowFiltering={true}
-        allowGrouping={true}>
+        allowGrouping={true}
+        rowSelected={setRowData}>
         <ColumnsDirective>
           <ColumnDirective field='OrderID' width='100' textAlign="Right" />
           <ColumnDirective field='CustomerID' width='100' />
