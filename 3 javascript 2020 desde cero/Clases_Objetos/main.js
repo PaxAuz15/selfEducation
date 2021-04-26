@@ -11,8 +11,12 @@ class Libro {
         this.genero = genero;
     };
 
+    getAuthors(){
+        return this.autor;
+    }
+
     datosLibro() {
-        dato = `El libro "${this.titulo}", de genero ${this.genero}, fue escrito por ${this.autor} y publicado en el ${this.anio}`
+        return `El libro "${this.titulo}", de genero ${this.genero}, fue escrito por ${this.autor} y publicado en el ${this.anio}`
     };
 };
 
@@ -52,14 +56,12 @@ for (let i = 0; i < 3; i++) {
 }
 
 const ShowLibros = () => {
-    for (let libro in libros) {
-        console.log(libros[libro])
-    }
+    console.log(libros)
 }
 
 const ShowAuthors = () => {
-    for (let libro in libros) {
-        autores.push(libros[libro].autor);
+    for (let libro of libros) {
+        autores.push(libro.getAuthors());
     }
     console.log(autores.sort())
 }
@@ -72,9 +74,9 @@ const SearchGenero = () => {
             break
         }
     }
-    for (let libro in libros) {
-        if (libros[libro].genero == generoBuscar) {
-            console.log(libros[libro])
+    for (let libro of libros) {
+        if (libro.genero == generoBuscar) {
+            console.log(libro.datosLibro())
         }
     }
 
