@@ -1,0 +1,4 @@
+Dentro del navegador:
+    Se puede seleccionar un elemento en el modo dev y, en la consola, se puede escribir $0
+    y se obtiene el nodo del elemento seleccionado. Y cada elemento del DOM contiene atributos que se pueden acceder
+    como si se tratase de objetos.
