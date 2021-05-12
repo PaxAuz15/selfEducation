@@ -6,3 +6,4 @@ console.log(first_list.lastElementChild); // Ultimo Hijo
 console.log(first_list.parentElement.nextElementSibling); //Siguiente Hermano
 console.log(first_list.parentElement.previousElementSibling); //Hermano Previo
 console.log(first_list.hasChildNodes()); //Ver si tiene nodos hijos
+console.log(first_list.parentElement.previousElementSibling); //Hermano Previo
