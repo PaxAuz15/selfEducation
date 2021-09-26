@@ -1,0 +1,1 @@
+https://dev.to/steadylearner/how-to-set-up-postgresql-and-pgadmin-with-docker-51h
