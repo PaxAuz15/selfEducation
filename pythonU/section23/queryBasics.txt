@@ -1,0 +1,4 @@
+-- SELECT * FROM person
+-- INSERT INTO person(name,last_name,email) VALUES('Gabriel','Auz','gauz@mail.com')
+-- UPDATE person SET name='Gabriel' WHERE id_person = 3
+DELETE FROM person WHERE id_person=1
