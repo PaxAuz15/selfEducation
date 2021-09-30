@@ -24,3 +24,9 @@ class CursorPool:
             log.debug(f"Commit running")
         self._cursor.close()
         Connection.unlockConnection(self._connection)
+
+if __name__ == "__main__":
+    with CursorPool() as cursor:
+        log.debug("Enter block with")
+        cursor.execute("SELECT * FROM person ORDER BY id_person")
+        log.debug(cursor.fetchall())

@@ -137,3 +137,151 @@ Email: mcasquete@mail.com
 04:33:35: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f5cf1b88400; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 04:33:35: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f5cf1b88540; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 04:33:35: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f5cf1b88680; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:10:15: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f70dd77b310>
+05:10:15: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f70db82c180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:10:15: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:10:15: DEBUG [CursorPool.py:30] Enter block with
+05:10:15: DEBUG [CursorPool.py:32] [(3, 'Gabriel', 'Auz', 'gauz@mail.com'), (6, 'Geoconda', 'Garcia', 'ggarcia@mail.com'), (7, 'Mariuxi', 'Macías Casquete', 'mcasquete@mail.com'), (2, 'Antonio', 'Auz García', 'anauzgarcia@mail.com')]
+05:10:15: DEBUG [CursorPool.py:24] Commit running
+05:10:15: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7f70db82c180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:19: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f27d3ef5310>
+05:11:19: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f27d1fa6180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:19: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:11:19: DEBUG [CursorPool.py:30] Enter block with
+05:11:19: ERROR [CursorPool.py:21] Error happened. It do to rollack: syntax error at or near "BY"
+LINE 1: SELECT * FROM person ORBER BY id_person
+                                   ^
+ - <class 'psycopg2.errors.SyntaxError'> - <traceback object at 0x7f27d1fb8a40>
+05:11:19: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7f27d1fa6180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:32: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fbf773a1310>
+05:11:32: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fbf75455180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:32: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:11:32: DEBUG [CursorPool.py:30] Enter block with
+05:11:32: ERROR [CursorPool.py:21] Error happened. It do to rollack: syntax error at or near "id_person"
+LINE 1: SELECT * FROM person ORBER_BY id_person
+                                      ^
+ - <class 'psycopg2.errors.SyntaxError'> - <traceback object at 0x7fbf754647c0>
+05:11:32: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fbf75455180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:49: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f4ef0c76310>
+05:11:49: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f4eeed27180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:11:49: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:11:49: DEBUG [CursorPool.py:30] Enter block with
+05:11:49: DEBUG [CursorPool.py:32] [(2, 'Antonio', 'Auz García', 'anauzgarcia@mail.com'), (3, 'Gabriel', 'Auz', 'gauz@mail.com'), (6, 'Geoconda', 'Garcia', 'ggarcia@mail.com'), (7, 'Mariuxi', 'Macías Casquete', 'mcasquete@mail.com')]
+05:11:49: DEBUG [CursorPool.py:24] Commit running
+05:11:49: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7f4eeed27180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:17:59: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fd638d5ba90>
+05:17:59: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fd636ddb180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:17:59: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:17:59: DEBUG [PersonDAO.py:25] idPerson: (2,)
+Name:('Antonio',)
+Last Name: ('Auz García',)
+Email: anauzgarcia@mail.com
+05:17:59: DEBUG [PersonDAO.py:25] idPerson: (3,)
+Name:('Gabriel',)
+Last Name: ('Auz',)
+Email: gauz@mail.com
+05:17:59: DEBUG [PersonDAO.py:25] idPerson: (6,)
+Name:('Geoconda',)
+Last Name: ('Garcia',)
+Email: ggarcia@mail.com
+05:17:59: DEBUG [PersonDAO.py:25] idPerson: (7,)
+Name:('Mariuxi',)
+Last Name: ('Macías Casquete',)
+Email: mcasquete@mail.com
+05:17:59: DEBUG [CursorPool.py:24] Commit running
+05:17:59: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fd636ddb180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:19:00: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fce6fed8520>
+05:19:00: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fce6dfcd180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:19:00: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:19:00: DEBUG [PersonDAO.py:33] Person Insert on db: idPerson: (None,)
+Name:('Alejandro',)
+Last Name: ('Bello',)
+Email: abello@mail.com
+05:19:00: DEBUG [CursorPool.py:24] Commit running
+05:19:00: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fce6dfcd180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:19:00: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fce6dfcd180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:19:00: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:19:00: DEBUG [PersonDAO.py:25] idPerson: (2,)
+Name:('Antonio',)
+Last Name: ('Auz García',)
+Email: anauzgarcia@mail.com
+05:19:00: DEBUG [PersonDAO.py:25] idPerson: (3,)
+Name:('Gabriel',)
+Last Name: ('Auz',)
+Email: gauz@mail.com
+05:19:00: DEBUG [PersonDAO.py:25] idPerson: (6,)
+Name:('Geoconda',)
+Last Name: ('Garcia',)
+Email: ggarcia@mail.com
+05:19:00: DEBUG [PersonDAO.py:25] idPerson: (7,)
+Name:('Mariuxi',)
+Last Name: ('Macías Casquete',)
+Email: mcasquete@mail.com
+05:19:00: DEBUG [PersonDAO.py:25] idPerson: (8,)
+Name:('Alejandro',)
+Last Name: ('Bello',)
+Email: abello@mail.com
+05:19:00: DEBUG [CursorPool.py:24] Commit running
+05:19:00: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fce6dfcd180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:20:01: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fda3a6e4520>
+05:20:01: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fda387d9180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:20:01: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:20:01: DEBUG [PersonDAO.py:41] Person updated on db: idPerson: (8,)
+Name:('Alejandrito',)
+Last Name: ('Bello',)
+Email: albello@mail.com
+05:20:01: DEBUG [CursorPool.py:24] Commit running
+05:20:01: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fda387d9180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:20:01: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7fda387d9180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:20:01: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:20:01: DEBUG [PersonDAO.py:25] idPerson: (2,)
+Name:('Antonio',)
+Last Name: ('Auz García',)
+Email: anauzgarcia@mail.com
+05:20:01: DEBUG [PersonDAO.py:25] idPerson: (3,)
+Name:('Gabriel',)
+Last Name: ('Auz',)
+Email: gauz@mail.com
+05:20:01: DEBUG [PersonDAO.py:25] idPerson: (6,)
+Name:('Geoconda',)
+Last Name: ('Garcia',)
+Email: ggarcia@mail.com
+05:20:01: DEBUG [PersonDAO.py:25] idPerson: (7,)
+Name:('Mariuxi',)
+Last Name: ('Macías Casquete',)
+Email: mcasquete@mail.com
+05:20:01: DEBUG [PersonDAO.py:25] idPerson: (8,)
+Name:('Alejandrito',)
+Last Name: ('Bello',)
+Email: albello@mail.com
+05:20:01: DEBUG [CursorPool.py:24] Commit running
+05:20:01: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7fda387d9180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:21:52: DEBUG [Connection.py:27] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5b229aa550>
+05:21:52: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f5b20aa0180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:21:52: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:21:52: DEBUG [PersonDAO.py:49] Person deleted on db: idPerson: (8,)
+Name:(None,)
+Last Name: (None,)
+Email: None
+05:21:52: DEBUG [CursorPool.py:24] Commit running
+05:21:52: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7f5b20aa0180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:21:52: DEBUG [Connection.py:39] Connection getted: <connection object at 0x7f5b20aa0180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:21:52: DEBUG [CursorPool.py:13] Connection and Cursor succesfully get
+05:21:52: DEBUG [PersonDAO.py:25] idPerson: (2,)
+Name:('Antonio',)
+Last Name: ('Auz García',)
+Email: anauzgarcia@mail.com
+05:21:52: DEBUG [PersonDAO.py:25] idPerson: (3,)
+Name:('Gabriel',)
+Last Name: ('Auz',)
+Email: gauz@mail.com
+05:21:52: DEBUG [PersonDAO.py:25] idPerson: (6,)
+Name:('Geoconda',)
+Last Name: ('Garcia',)
+Email: ggarcia@mail.com
+05:21:52: DEBUG [PersonDAO.py:25] idPerson: (7,)
+Name:('Mariuxi',)
+Last Name: ('Macías Casquete',)
+Email: mcasquete@mail.com
+05:21:52: DEBUG [CursorPool.py:24] Commit running
+05:21:52: DEBUG [Connection.py:49] Unlock Connection succesfully: <connection object at 0x7f5b20aa0180; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
