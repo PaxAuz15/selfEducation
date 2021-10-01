@@ -1,0 +1,348 @@
+06:32:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5e9601ea00>
+06:32:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5e941877c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:32:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f5e941c38b0; closed: 0>
+06:32:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ - <class 'psycopg2.errors.UndefinedColumn'> - <traceback object at 0x7f5e94042dc0>
+06:32:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5e941877c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:32:S: ERROR [UserDao.py:30] Error happened while getting all users: column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+
+06:33:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f1a313f2a00>
+06:33:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f1a2f55a7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:33:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f1a2f5988b0; closed: 0>
+06:33:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f1a2f4140c0>
+06:33:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f1a2f55a7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:33:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+06:36:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fdf140b9280>
+06:36:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fdf122947c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:36:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fdf122d28b0; closed: 0>
+06:36:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: tuple index out of range - <class 'IndexError'> - <traceback object at 0x7fdf1214af40>
+06:36:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fdf122947c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:36:S: ERROR [UserDao.py:42] Error happened while insert user: tuple index out of range
+06:37:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f2c54042a00>
+06:37:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f2c521aa7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:37:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f2c521e88b0; closed: 0>
+06:37:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f2c52060f40>
+06:37:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f2c521aa7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+06:37:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:08:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fbdb77f1a00>
+07:08:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fbdb59597c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:08:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fbdb59978b0; closed: 0>
+07:08:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fbdb5813040>
+07:08:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fbdb59597c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:08:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:09:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe1dffbba00>
+07:09:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe1de1237c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:09:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fe1de1618b0; closed: 0>
+07:09:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fe1ddfdfec0>
+07:09:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe1de1237c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:09:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:10:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc82c2aca00>
+07:10:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc82a4147c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fc82a4528b0; closed: 0>
+07:10:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fc82a2d0f00>
+07:10:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc82a4147c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:10:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8669d91a00>
+07:10:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8667ef97c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f8667f378b0; closed: 0>
+07:10:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f8667db3080>
+07:10:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8667ef97c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:10:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff21bd0ca00>
+07:10:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff219e747c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7ff219eb28b0; closed: 0>
+07:10:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7ff219d2e1c0>
+07:10:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff219e747c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:10:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:11:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fc198dbea00>
+07:11:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fc196f267c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:11:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fc196f648b0; closed: 0>
+07:11:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fc196de0080>
+07:11:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fc196f267c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:11:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:14:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fcbaa901280>
+07:14:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fcba8adc7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:14:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fcba8b1a8b0; closed: 0>
+07:14:S: DEBUG [UserDao.py:38] User registred: idUser: None
+username: paxauz
+password: 12345
+07:14:S: DEBUG [CursorPool.py:25] Commit running
+07:14:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fcba8adc7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:14:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f1591553a00>
+07:14:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f158f6bb7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:14:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f158f6f98b0; closed: 0>
+07:14:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f158f575080>
+07:14:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f158f6bb7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:14:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:18:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff3f39d98e0>
+07:18:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff3f1b417c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:18:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7ff3f1b7f8b0; closed: 0>
+07:18:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7ff3f19f7dc0>
+07:18:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff3f1b417c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:18:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:18:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f0b7d1d48e0>
+07:18:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f0b7b33c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:18:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f0b7b37a8b0; closed: 0>
+07:18:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f0b7b1f2c40>
+07:18:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f0b7b33c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:18:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:19:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fcba51a88e0>
+07:19:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fcba33107c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:19:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fcba334e8b0; closed: 0>
+07:19:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fcba31ccf00>
+07:19:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fcba33107c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:19:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:20:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f7d3f44e8e0>
+07:20:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f7d3d5b67c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:20:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f7d3d5f48b0; closed: 0>
+07:20:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f7d3d470140>
+07:20:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f7d3d5b67c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:20:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:22:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fa27f6a88e0>
+07:22:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fa27d8107c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:22:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fa27d84e8b0; closed: 0>
+07:22:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: syntax error at or near "'user'"
+LINE 1: SELECT * FROM public.'user'
+                             ^
+ - <class 'psycopg2.errors.SyntaxError'> - <traceback object at 0x7fa27d6ccf80>
+07:22:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fa27d8107c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:22:S: ERROR [UserDao.py:30] Error happened while getting all users: syntax error at or near "'user'"
+LINE 1: SELECT * FROM public.'user'
+                             ^
+
+07:23:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff12fd138e0>
+07:23:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff12de7b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:23:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7ff12deb98b0; closed: 0>
+07:23:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7ff12dd35200>
+07:23:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff12de7b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:23:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:23:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff81e0b18e0>
+07:23:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff81c2197c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:23:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7ff81c2578b0; closed: 0>
+07:23:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7ff81c0d30c0>
+07:23:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff81c2197c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:23:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:24:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fec72e238e0>
+07:24:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fec70f8b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fec70fc98b0; closed: 0>
+07:24:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7fec70e45100>
+07:24:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fec70f8b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:24:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f7d2bc5b8e0>
+07:24:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f7d29dc37c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f7d29e018b0; closed: 0>
+07:24:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f7d29c800c0>
+07:24:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f7d29dc37c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:24:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f55bb6d48e0>
+07:24:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f55b983c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f55b987a8b0; closed: 0>
+07:24:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f55b96f6240>
+07:24:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f55b983c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:24:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:25:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f97eff9f8e0>
+07:25:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f97ee1077c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:25:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f97ee1458b0; closed: 0>
+07:25:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f97edfc1180>
+07:25:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f97ee1077c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:25:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:25:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f687095a8e0>
+07:25:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f686eac27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:25:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f686eb008b0; closed: 0>
+07:25:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f686e97c0c0>
+07:25:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f686eac27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:25:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:28:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f636dfa8280>
+07:28:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f636c1837c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:28:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f636c1c18b0; closed: 0>
+07:28:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: syntax error at or near "user"
+LINE 1: UPDATE user SET username='paxauz20',password='54321' WHERE i...
+               ^
+ - <class 'psycopg2.errors.SyntaxError'> - <traceback object at 0x7f636c03d1c0>
+07:28:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f636c1837c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:28:S: ERROR [UserDao.py:53] Error happened while updating user: syntax error at or near "user"
+LINE 1: UPDATE user SET username='paxauz20',password='54321' WHERE i...
+               ^
+
+07:28:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f8f05aee280>
+07:28:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f8f03cc97c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:28:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f8f03d078b0; closed: 0>
+07:28:S: DEBUG [UserDao.py:50] User updated: idUser: 1
+username: paxauz20
+password: 54321
+07:28:S: DEBUG [CursorPool.py:25] Commit running
+07:28:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f8f03cc97c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fbae1f63280>
+07:29:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fbae013e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fbae017c8b0; closed: 0>
+07:29:S: DEBUG [UserDao.py:38] User registred: idUser: None
+username: tatogabo
+password: 12345
+07:29:S: DEBUG [CursorPool.py:25] Commit running
+07:29:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fbae013e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6e78da8280>
+07:29:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6e76f837c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f6e76fc18b0; closed: 0>
+07:29:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: syntax error at or near "user"
+LINE 1: DELETE FROM user WHERE id_user=NULL
+                    ^
+ - <class 'psycopg2.errors.SyntaxError'> - <traceback object at 0x7f6e76e3fe00>
+07:29:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6e76f837c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: ERROR [UserDao.py:64] Error happened while delete user: syntax error at or near "user"
+LINE 1: DELETE FROM user WHERE id_user=NULL
+                    ^
+
+07:29:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fdaaf0e8280>
+07:29:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fdaad2c37c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:29:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fdaad3018b0; closed: 0>
+07:29:S: DEBUG [UserDao.py:61] User deleted: idUser: None
+username: tatogabo
+password: 12345
+07:29:S: DEBUG [CursorPool.py:25] Commit running
+07:29:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fdaad2c37c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:30:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f6bea5512b0>
+07:30:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f6be872c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:30:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f6be876a8b0; closed: 0>
+07:30:S: DEBUG [UserDao.py:61] User deleted: idUser: 2
+username: None
+password: None
+07:30:S: DEBUG [CursorPool.py:25] Commit running
+07:30:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f6be872c7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:31:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f734ee1a280>
+07:31:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f734cff57c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:31:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f734d0338b0; closed: 0>
+07:31:S: DEBUG [UserDao.py:38] User registred: idUser: None
+username: tatogabo
+password: 12345
+07:31:S: DEBUG [CursorPool.py:25] Commit running
+07:31:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f734cff57c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:31:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f56a8a3a8e0>
+07:31:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f56a6ba27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:31:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f56a6be08b0; closed: 0>
+07:31:S: ERROR [CursorPool.py:22] Error happened with query. We do rollback: debug() missing 1 required positional argument: 'msg' - <class 'TypeError'> - <traceback object at 0x7f56a6a5c2c0>
+07:31:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f56a6ba27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:31:S: ERROR [UserDao.py:30] Error happened while getting all users: debug() missing 1 required positional argument: 'msg'
+07:34:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f5bdba8a8e0>
+07:34:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f5bd9bf27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:34:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f5bd9c308b0; closed: 0>
+07:34:S: DEBUG [UserDao.py:26] Getting Users succesfully
+07:34:S: DEBUG [CursorPool.py:25] Commit running
+07:34:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f5bd9bf27c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:35:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7ff6cdadc8b0>
+07:35:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7ff6cbc447c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:35:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7ff6cbc828b0; closed: 0>
+07:35:S: DEBUG [UserDao.py:26] Getting Users succesfully
+07:35:S: DEBUG [CursorPool.py:25] Commit running
+07:35:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7ff6cbc447c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:35:S: DEBUG [UserDao.py:76] idUser: 1
+username: paxauz20
+password: 54321
+07:35:S: DEBUG [UserDao.py:76] idUser: 3
+username: tatogabo
+password: 12345
+07:46:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fb4eabd20a0>
+07:46:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fb4e8b8a7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:46:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fb4e8bc88b0; closed: 0>
+07:46:S: DEBUG [UserDao.py:26] Getting Users succesfully
+07:46:S: DEBUG [CursorPool.py:25] Commit running
+07:46:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fb4e8b8a7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:47:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f10048470a0>
+07:47:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:47:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:47:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+07:47:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+07:47:S: DEBUG [UserDao.py:27] Getting Users succesfully
+07:47:S: DEBUG [CursorPool.py:25] Commit running
+07:47:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:47:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:47:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:47:S: DEBUG [UserDao.py:38] User registred: idUser: None
+username: mariuxi
+password: 123456789
+07:47:S: DEBUG [CursorPool.py:25] Commit running
+07:47:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+07:48:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+07:48:S: DEBUG [UserDao.py:26] idUser: 4
+username: mariuxi
+password: 123456789
+07:48:S: DEBUG [UserDao.py:27] Getting Users succesfully
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+07:48:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+07:48:S: DEBUG [UserDao.py:26] idUser: 4
+username: mariuxi
+password: 123456789
+07:48:S: DEBUG [UserDao.py:27] Getting Users succesfully
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:50] User updated: idUser: 4
+username: maru
+password: 123
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+07:48:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+07:48:S: DEBUG [UserDao.py:26] idUser: 4
+username: maru
+password: 123
+07:48:S: DEBUG [UserDao.py:27] Getting Users succesfully
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f100283d8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:61] User deleted: idUser: 4
+username: None
+password: None
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f10027ff7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7f35f1c760a0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f35efc2e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f35efc6c8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+07:48:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+07:48:S: DEBUG [UserDao.py:27] Getting Users succesfully
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f35efc2e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7f35efc2e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+07:48:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7f35efc6c8b0; closed: 0>
+07:48:S: DEBUG [UserDao.py:38] User registred: idUser: None
+username: mariuxi
+password: 123456789
+07:48:S: DEBUG [CursorPool.py:25] Commit running
+07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f35efc2e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
