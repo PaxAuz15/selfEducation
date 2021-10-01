@@ -346,3 +346,28 @@ username: mariuxi
 password: 123456789
 07:48:S: DEBUG [CursorPool.py:25] Commit running
 07:48:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7f35efc2e7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+09:32:S: DEBUG [Connection.py:28] Pool getted: <psycopg2.pool.SimpleConnectionPool object at 0x7fe4d167b310>
+09:32:S: DEBUG [Connection.py:39] Connection obtained: <connection object at 0x7fe4cf77b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+09:32:S: DEBUG [CursorPool.py:14] Connection and Cursor obtnained succesfully: <cursor object at 0x7fe4cf7b88b0; closed: 0>
+09:32:S: DEBUG [UserDao.py:26] idUser: 1
+username: paxauz20
+password: 54321
+09:32:S: DEBUG [UserDao.py:26] idUser: 3
+username: tatogabo
+password: 12345
+09:32:S: DEBUG [UserDao.py:26] idUser: 5
+username: mariuxi
+password: 123456789
+09:32:S: DEBUG [UserDao.py:27] Getting Users succesfully
+09:32:S: DEBUG [CursorPool.py:25] Commit running
+09:32:S: DEBUG [Connection.py:49] Unlocked Connection: <connection object at 0x7fe4cf77b7c0; dsn: 'user=postgres password=xxx dbname=user_laboratory host=127.0.0.1 port=5432', closed: 0>
+09:44:S: INFO [MenuAppUser.py:13] idUser: 1
+username: paxauz20
+password: 54321
+09:44:S: INFO [MenuAppUser.py:13] idUser: 3
+username: tatogabo
+password: 12345
+09:44:S: INFO [MenuAppUser.py:13] idUser: 5
+username: mariuxi
+password: 123456789
+09:44:S: INFO [MenuAppUser.py:35] App Exit
