@@ -12,3 +12,5 @@ string2:str = "Bienvenido, " "a este curso. " + string + " Mundo"
 # help(str)
 
 help(Person)
+
+# Note: String are inmutables 
