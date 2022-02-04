@@ -1,26 +1,21 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-
-const GIFS = [
-  "https://media.giphy.com/media/7frSUXgbGqQPKNnJRS/giphy.gif",
-  "https://media.giphy.com/media/z0ImSbMh4uJR4BEJju/giphy.gif"
-]
-
-const GIFS_DIFF = [
-  "https://media.giphy.com/media/MVDPX3gaKFPuo/giphy.gif",
-  "https://media.giphy.com/media/26xBwFcBGPLNfGbkY/giphy.gif"
-]
+import getGifs from './services/getGifs';
 
 const App = () => {
-  const [gifs,setGif] = useState(GIFS)
+  const [gifs,setGif] = useState([])
 
   function handleChangeGifs(){
-    setGif(GIFS_DIFF)
+    setGif()
   }
+
+  
 
   useEffect(function(){
     console.log("useEffect")
-    setGif(GIFS_DIFF)
+    getGifs({keyboards:'rick'}).then((images)=>{
+      setGif(images)
+    })
   },[])
 
   return (
@@ -29,7 +24,13 @@ const App = () => {
         {console.log("render")}
         {
           gifs.map(gif=>{
-            return <img src={gif}/>
+            return(
+              <>
+                <h4>{gif.title}</h4>
+                <small>{gif.id}</small>
+                <img src={gif.url} alt={gif.title}/>
+              </>
+            )
           })
         }
         <button onClick={handleChangeGifs}>Change gifs</button>
