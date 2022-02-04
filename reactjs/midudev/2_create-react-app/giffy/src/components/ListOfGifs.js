@@ -6,14 +6,19 @@ const ListOfGifs = ({ keyword }) => {
     const [gifs, setGifs] = useState([])
 
     useEffect(function(){
+        console.log("useEfect ListOfGifs");
         getGifs({keyword})
             .then(gifs=>setGifs(gifs))
     },[keyword])
     
     return (
-        gifs.map(({id,title,url})=> {
+        <>
+        {console.log("render from ListOfGifs")}
+        {gifs.map(({id,title,url})=> {
             return <Gif key={id} id-={id} title={title} image={url} />
-          })
+        })}
+        </>
+        
     )
 }
 
