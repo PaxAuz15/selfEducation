@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import getGifs from './services/getGifs';
+import Gif from './components/Gif';
 
 const App = () => {
   const [gifs,setGif] = useState([])
@@ -23,14 +24,8 @@ const App = () => {
       <section className="App-content">
         {console.log("render")}
         {
-          gifs.map(gif=>{
-            return(
-              <>
-                <h4>{gif.title}</h4>
-                <small>{gif.id}</small>
-                <img src={gif.url} alt={gif.title}/>
-              </>
-            )
+          gifs.map(({id,title,url})=> {
+            return <Gif key={id} id-={id} title={title} image={url} />
           })
         }
         <button onClick={handleChangeGifs}>Change gifs</button>
