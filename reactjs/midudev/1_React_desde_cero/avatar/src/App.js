@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <h1>Women in tech</h1>
       <div className="avatars">
-        <Avatar id={1} name="Laura" size=""/>
+        <Avatar />
         <Avatar id={2} name="Veronica" size="large" />
       </div>
     </div>

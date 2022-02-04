@@ -1,14 +1,16 @@
 import { useState } from "react"
 
-const Avatar = (props) => {
+const df = `${process.env.PUBLIC_URL}/default_profile.jpg`
+
+const Avatar = ({id,name="🤦‍♀️",size}) => {
     const [enabled, setEnabled] = useState(true)
 
     const className = enabled ? "" : "disabled"
 
     let pictureClassName = ""
-    if (props.size === "small"){
+    if (size === "small"){
       pictureClassName = "is-small"
-    } else if (props.size === "large") {
+    } else if (size === "large") {
       pictureClassName = "is-large"
     }
     const handleClick = () => {
@@ -17,13 +19,23 @@ const Avatar = (props) => {
         })
     }
 
-    const uri = `https://randomuser.me/api/portraits/women/${props.id}.jpg`
+    const uri = `https://randomuser.me/api/portraits/women/${id}.jpg`
     return (
       <picture className={pictureClassName}>
-        <img src={uri} alt={props.name} className={className} onClick={handleClick} sizes={props.size}/>
-        <strong>{props.name}</strong>
+        {
+          id ? 
+            <img src={uri} alt={name} className={className} onClick={handleClick} sizes={size}/> :
+            <img src={df} alt={name} className={className} onClick={handleClick} sizes={size}/>
+        }
+        <strong>{name}</strong>
       </picture>
     )
 }
 
+//Default values (old way)
+/*
+Avatar.defaultProps = {
+  name:"🤦‍♀️"
+}
+*/
 export default Avatar
