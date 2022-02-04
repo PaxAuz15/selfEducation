@@ -5,6 +5,12 @@ const Avatar = (props) => {
 
     const className = enabled ? "" : "disabled"
 
+    let pictureClassName = ""
+    if (props.size === "small"){
+      pictureClassName = "is-small"
+    } else if (props.size === "large") {
+      pictureClassName = "is-large"
+    }
     const handleClick = () => {
         setEnabled(preventState => {
           return !preventState
@@ -13,8 +19,8 @@ const Avatar = (props) => {
 
     const uri = `https://randomuser.me/api/portraits/women/${props.id}.jpg`
     return (
-      <picture>
-        <img src={uri} alt={props.name} className={className} onClick={handleClick}/>
+      <picture className={pictureClassName}>
+        <img src={uri} alt={props.name} className={className} onClick={handleClick} sizes={props.size}/>
         <strong>{props.name}</strong>
       </picture>
     )

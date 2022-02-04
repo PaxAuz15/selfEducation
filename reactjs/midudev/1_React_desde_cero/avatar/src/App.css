@@ -1,6 +1,6 @@
 img {
     border-radius: 50%;
-    max-width: 100px;
+    max-width: 100%;
 }
 
 picture {
@@ -10,6 +10,14 @@ picture {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+picture.is-small {
+    max-width: 50px;
+}
+
+picture.is-large {
+    max-width: 200px;
 }
 
 img.disabled {
