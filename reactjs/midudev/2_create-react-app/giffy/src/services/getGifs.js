@@ -1,8 +1,8 @@
 import { apiKey } from "./constants"
 
-export default function getGifs({keyboards = "pandas"} = {}){
+export default function getGifs({keyword = "pandas"} = {}){
     
-    const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyboards}&limit=10&offset=0&rating=g&lang=en`
+    const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=10&offset=0&rating=g&lang=en`
 
     return fetch(apiUrl)
       .then(res=>res.json())
