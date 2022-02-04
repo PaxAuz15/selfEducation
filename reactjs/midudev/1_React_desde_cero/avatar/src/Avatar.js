@@ -6,11 +6,12 @@ const Avatar = (props) => {
     const className = enabled ? "" : "disabled"
 
     const handleClick = () => {
-        setEnabled(!enabled)
+        setEnabled(preventState => {
+          return !preventState
+        })
     }
 
     const uri = `https://randomuser.me/api/portraits/women/${props.id}.jpg`
-    console.log(uri)
     return (
       <picture>
         <img src={uri} alt={props.name} className={className} onClick={handleClick}/>
