@@ -19,12 +19,12 @@ const ListOfGifs = ({params}) => {
     },[keyword])
     
     return (
-        <>
+        <div className="listOfGifs">
         {console.log("render from ListOfGifs")}
         {loading ? <Loading /> : gifs.map(({id,title,url})=> {
             return <Gif key={id} id-={id} title={title} image={url} />
         })}
-        </>
+        </div>
         
     )
 }
